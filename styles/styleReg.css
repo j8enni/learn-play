@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Attentica 4F';
+    src: url('../fonts/attentica-4f.ultralight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Общие стили */
+body {
+    background: #F7F2FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+/* Фоновые элементы */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.clouds {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 87%;
+    height: 895px;
+}
+
+.moon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 87%;
+}
+
+/* Блок авторизации */
+.login-container {
+    background: transparent;
+    text-align: center;
+    width: 538px;
+    z-index: 1;
+   margin-bottom: 65px;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 96px;
+    font-family: "Attentica 4F", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+/* Группа ввода */
+.input-group {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    color: #999999;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Обертка для иконки и поля */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 2.5px solid #999999;
+    padding-bottom: 5px;
+    height: 40px; /* Установим фиксированную высоту */
+    
+}
+
+/* Иконка */
+.input-wrapper i {
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Поле ввода */
+input {
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000842;
+    width: 100%;
+    background: transparent;
+    height: 100%;
+    padding-left: 14px; /* Отступ текста от иконки */
+    display: flex;
+    align-items: center;
+}
+
+
+input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000842;
+    opacity: 1; 
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+}
+
+a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: #0C21C1;
+    text-decoration: none;
+
+}
+
+p a {
+    display: block; /* Переносим ссылку на новую строку */
+    margin-top: 5px; /* Добавляем небольшой отступ сверху */
+}
+
+/* Кнопка входа */
+button {
+    background: #8D81D3;
+    color: white;
+    border: none;
+    padding: 15px;
+    height: 60px;
+    width: 100%;
+    border-radius: 32px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+    font-size: 17px;
+    box-shadow: 0px 5px 15px rgba(145, 117, 227, 0.3);
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #7158c7;
+}
