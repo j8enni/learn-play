@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: 'Attentica 4F';
+    src: url('/fonts/attentica-4f.ultralight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Attentica 4F', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Attentica 4F', sans-serif;
+    background-color: #F3EFF4;
+    text-align: center;
+}
+
+.header {
+    background-color: #8B78C5;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 24px;
+    height: 192px;
+}
+
+.logo {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.logout-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-container {
+    margin: -30px auto 0;
+    padding: 100px 50px 50px;
+    width: 80%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.avatar img {
+    width: 175px;
+    height: 175px;
+}
+
+.username {
+    position: relative;
+    top: -60px;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.achievements {
+    margin-top: 30px;
+}
+
+.achievements h3 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-left: -90%;
+}
+
+
+.achievement-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.3px;
+    border-radius: 25px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1300px;
+    height: 250px;
+    margin: auto;
+
+    background-color: #F3EFF4;
+    border: 1px solid #D4CADF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+
+.achievement img {
+    width: 260px;
+    height: 180px;
+}

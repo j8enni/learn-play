@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Attentica 4F';
+    src: url('/fonts/attentica-4f.ultralight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4EFF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    font-size: 32px;
+    color: #C0B7D3;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-family: 'Attentica 4F', sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.avatar {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    width: 90%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button {
+    width: 450px;
+    height: 60px; /* Увеличил высоту для баланса с текстом */
+    border: none;
+    border-radius: 35px;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    font-family: 'Attentica 4F', sans-serif;
+    
+    /* Центрирование */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1; /* Убирает лишний отступ */
+}
+
+
+.register {
+    background:#927AD8;
+}
+
+.login {
+    background:#78C6E5;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.socials {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.socials img:hover {
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}

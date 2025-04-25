@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Attentica 4F';
+    src: url('../fonts/attentica-4f.ultralight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    font-size: 32px;
+    color: #ffffff;
+    font-family: 'Attentica 4F', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Шапка */
+.header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* Фиксированное положение иконки профиля */
+.profile-icon {
+    position: fixed; /* Делаем иконку фиксированной */
+    top: 25px;
+    right: 40px;
+}
+
+.profile-icon img {
+    width: 40px; /* Размер иконки */
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Фон */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Центрирование уровней */
+.levels {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирует блок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.level {
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.level:hover {
+    transform: scale(1.1);
+}
+
+/* Нижнее меню */
+.bottom-menu {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: "Attentica 4F", sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
